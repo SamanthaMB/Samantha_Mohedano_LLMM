@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samantha Mohedano Barrena">
+    <!-- Insertamos favicon -->
+    <link rel="shortcut icon" href="img/arcade.png" type="image/x-icon">
+    <!-- Insertamos CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>StreetFighter-UNIR</title>
+</head>
+
+<body>
+    <h1>“To live is to fight, to fight is to live!</h1>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4">Street Fighter</th>
+            </tr>
+        </thead>
+        <tr>
+            <td class="ken">KEN</td>
+            <td class="chunli">CHUN LI</td>
+            <td class="zangief">ZANGIEF</td>
+            <td class="dhalsim">DHALSIN</td>
+        </tr>
+        <tr>
+            <td class="ryu">RYU</td>
+            <td class="ehonda">E HONDA</td>
+            <td class="blanka">BLANKA</td>
+            <td class="guille">GUILLE</td>
+        </tr>
+        <tr>
+            <td class="thawk">T HAWK</td>
+            <td class="feilong">FEILONG</td>
+            <td class="deejay">DEE JAY</td>
+            <td class="cammy">CAMMY</td>
+        </tr>
+        <tr>
+            <td class="balrog">BALROG</td>
+            <td class="vega">VEGA</td>
+            <td class="sagat">SAGAT</td>
+            <td class="mbison">M BISON</td>
+        </tr>
+    </table>
+
+    <h2>Formulario de inscripción para jugar a street fighter</h2>
+    <form name="inscripcion" action="mailto:ejemplo@unir.com" method="post">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <div><label for="nombre">Nombre:</label></div>
+            <div><input type="text" name="nombre" id="nombre"></div>
+            <div><label for="apellidos">Apellidos:</label></div>
+            <div><input type="text" name="apellidos" id="apellidos"></div>
+            <div><label for="dirPostal">Dirección Postal:</label></div>
+            <div>
+                <input type="text" name="calle" id="calle" placeholder=Calle>
+                <input type="text" name="numero" id="numero" placeholder=Nº>
+                <input type="text" name="piso" id="piso" placeholder=Piso>
+                <input type="text" name="cdpostal" id="cdpostal" placeholder=Cód.Postal>
+                <input type="text" name="ciudad" id="ciudad" placeholder=Ciudad>
+            </div>
+            <div><label for="nick">Nick: </label></div>
+            <div><input type="text" name="nick" id="nick"></div>
+            <div><label for="correo">Correo electronico: </label></div>
+            <div><input type="correo" name="correo" id="correo"></div>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo Usuario</legend>
+            <div>
+                <input type="radio" name="sexo" value="hombre" id="hombre">
+                <label for="hombre">Hombre</label>
+            </div>
+            <div>
+                <input type="radio" name="sexo" value="mujer" id="mujer">
+                <label for="mujer">Mujer</label>
+            </div>
+            <div>
+                <input type="radio" name="sexo" value="nodecir" id="nodecir">
+                <label for="mujer">Prefiero No Decir</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <div>
+                <label for="fechanac">Fecha de nacimiento:</label>
+                <input type="date" name="fechanac" id="fechanac">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Personajes</legend>
+            Selecciona el personaje:
+            <select name="personajes" id="personajes">
+                <option value="ken">Ken</option>
+                <option value="chunli">ChunLi</option>
+                <option value="ryu">Ryu</option>
+                <option value="otros">Otros..</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Comentarios</legend>
+            <textarea id="comentarios" name="comentarios" rows="8"></textarea>
+        </fieldset>
+        <div>
+            <input class="boton" type="button" value="Borrar">
+            <input class="boton" type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>
